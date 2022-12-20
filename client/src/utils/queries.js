@@ -35,9 +35,15 @@ export const QUERY_USERS = gql`
 export const QUERY_ME = gql`
 	query Query {
 		me {
-			username
-			email
 			_id
+			email
+			entries {
+				username
+				_id
+				createdAt
+				entryText
+				}
+			username
 		}
 	}
 `;

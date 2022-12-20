@@ -33,4 +33,21 @@ export const ADD_USER = gql`
             }
         }
     }
-`
+`;
+
+export const UPDATE_ENTRY = gql`
+    mutation updateEntry($entryText: String!, $id: ID) {
+        updateEntry(entryText: $entryText, _id: $id) {
+        entryText
+        _id
+    }
+}
+`;
+
+export const DELETE_ENTRY = gql`
+    mutation deleteEntry($id: ID) {
+        deleteEntry(_id: $id) {
+            _id
+        }
+    }
+`;

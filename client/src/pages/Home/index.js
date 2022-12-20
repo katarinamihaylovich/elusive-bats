@@ -7,7 +7,6 @@ import Auth from '../../utils/auth';
 
 const Home = () => {
 	const { loading, data } = useQuery(QUERY_ENTRIES);
-	const {data: userData } = useQuery(QUERY_ME);
 
 	const entries = data?.entries || [];
 	const loggedIn = Auth.loggedIn();
@@ -25,10 +24,11 @@ const Home = () => {
 						{loading ? (
 							<div>Loading...</div>
 						) : (
-							<EntryList entries={entries} title='Travel Entries' />
+							<EntryList entries={entries} title='Travel Entries:' />
 						)}
 					</div>
 				</div>
+				<img src={require('../../assets/images/Rotating_globe.gif')} alt="spinning globe"></img>
 			</main>
 		</>
 	  );

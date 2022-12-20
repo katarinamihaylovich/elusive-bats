@@ -1,12 +1,12 @@
 /* Put CSS resets in here, such as ul { margin: 0 } */
 
 :root {
-    --primary: #4d7549;
-    --secondary: #88ba91;
+    --primary: #495675;
+    --secondary: #88ba9b;
     --tertiary: #bbc2b2;
     --quatrinary: #cadbcc;
-    --light: #e9f5e1;
-    --dark: #6c756e;
+    --light: #fcfffa;
+    --dark: #6c7573;
     --error: rgb(228, 46, 1);
     --border-radius: 0.3rem;
     --spacing-one: calc(1rem * 0.25);
@@ -42,7 +42,7 @@
   h4,
   h5,
   h6 {
-    font-family: 'Verdana', serif;
+    font-family: 'Arial', serif;
     font-weight: 700;
     margin: 5px 0;
     line-height: 1.25;
@@ -85,16 +85,25 @@
   a:visited {
     color: inherit;
   }
+
+  img {
+    margin: auto;
+    display: block;
+  }
   
   nav {
     width: 100%;
     justify-content: center;
+    padding: 15px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid rgb(164, 196, 150);
   }
   
   nav a {
     padding: 6px 10px;
     margin: 0 15px;
     transition: all 0.2s;
+
   }
   
   nav a:hover {

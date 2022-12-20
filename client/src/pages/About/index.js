@@ -10,15 +10,13 @@ function About() {
 
 	return (
 		<h1>
-			This is the about page for my project.
+			This is the about page for my website
 
 			{loading ? (
 				<div>Loading ...</div>
 			) : (
 					<div>
-						{users.map(user => {
-							return <p key={user._id}>{user.email}</p>
-						})}
+						
 					</div>
 			)}
 		</h1>
