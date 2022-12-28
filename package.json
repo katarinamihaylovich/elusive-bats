@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/katarinamihaylovich/elusive-bats/issues"
   },
-  "homepage": "https://github.com/katarinamihaylovich/elusive-bats#readme"
+  "homepage": "https://github.com/katarinamihaylovich/elusive-bats#readme",
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0"
+  }
 }
