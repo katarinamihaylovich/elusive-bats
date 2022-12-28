@@ -1,8 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useQuery, useMutation } from '@apollo/client';
-import { QUERY_ENTRIES, QUERY_ME } from '../../utils/queries';
-import Auth from '../../utils/auth';
 
 const EntryList = ({ entries, title }) => {
     // const {loading, data } = useQuery(QUERY_ME, {variables: {id: entries._id}});

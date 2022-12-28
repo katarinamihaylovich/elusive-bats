@@ -1,8 +1,8 @@
 // these queries are here for example ONLY
 import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { QUERY_USERS, QUERY_ME } from '../../utils/queries';
-import { useQuery, useMutation } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import  EntryForm  from '../../components/EntryForm';
 import EntryList from '../../components/EntryList';
 import Auth from '../../utils/auth';

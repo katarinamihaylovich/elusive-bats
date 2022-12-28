@@ -14,7 +14,7 @@ const SingleEntry = props => {
     const entry = data?.entry || {};
     
 
-    const [deleteEntry, {error}] = useMutation(DELETE_ENTRY, {
+    const [deleteEntry ] = useMutation(DELETE_ENTRY, {
         update(cache, {data: {deleteEntry}}) {
             try { 
                 cache.writeQuery({

@@ -5,9 +5,8 @@ import { QUERY_ENTRIES, QUERY_ME } from '../../utils/queries';
 
 const EntryForm = () => {
     const [entryText, setText ] = useState('');
-    const [characterCount, setCharacterCount ] = useState(0);
 
-    const [addEntry, {error}] = useMutation(ADD_ENTRY, {
+    const [addEntry] = useMutation(ADD_ENTRY, {
         update(cache, {data: {addEntry}}) {
             try {
                 const {entries} = cache.readQuery({ query: QUERY_ENTRIES });
@@ -16,8 +15,8 @@ const EntryForm = () => {
                     query: QUERY_ENTRIES,
                     data: { entries: [addEntry, ...entries]}
                 });
-            } catch (e) {
-                console.error(e);
+            } catch (error) {
+                console.error(error);
             }
 
             const { me } = cache.readQuery({ query: QUERY_ME });
@@ -30,7 +29,6 @@ const EntryForm = () => {
     const handleChange = event => {
         if (event.target.value.length <= 600) {
             setText(event.target.value);
-            setCharacterCount(event.target.value.length);
         }
     }
 
