@@ -26,6 +26,7 @@
   "homepage": "https://github.com/katarinamihaylovich/elusive-bats#readme",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
+    "bcrypt": "^5.1.0",
     "serve": "^14.1.2"
   }
 }
